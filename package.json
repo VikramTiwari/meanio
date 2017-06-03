@@ -1,22 +1,19 @@
 {
-  "name": "meanio",
+  "name": "@tiwarivikram/meanio",
   "version": "0.9.4",
   "description": "Extracted functionality for MEAN.io",
-  "author": {
-    "name": "linnovate"
-  },
+  "author": "linnovate",
+  "private": false,
   "contributors": "https://github.com/linnovate/meanio/graphs/contributors",
   "license": "MIT",
   "main": "lib/mean.js",
   "scripts": {
     "postinstall": "cd ./lib/core_modules/server && npm install && cd ../../..",
-    "test": "gulp test",
-    "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "test": "gulp test"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/linnovate/meanio.git"
+    "url": "git+https://github.com/linnovate/meanio.git"
   },
   "keywords": [
     "mean",
@@ -57,5 +54,12 @@
     "should": "^3.2.0",
     "sinon": "^1.17.4"
   },
-  "snyk": true
+  "bugs": {
+    "url": "https://github.com/linnovate/meanio/issues"
+  },
+  "homepage": "https://github.com/linnovate/meanio#readme",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  }
 }
